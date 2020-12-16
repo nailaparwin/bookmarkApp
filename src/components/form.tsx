@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react"
 import { useQuery, useMutation } from '@apollo/client';
 import gql from 'graphql-tag';
-import ErrorMsg from './form';
+import ErrorMsg from './errorMsg';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { 
@@ -41,7 +41,7 @@ import {
             about: "",
           };
           
-          const validationSchema = Yup.object({
+          const validationSchema = Yup.object().shape({
             title: Yup.string().required("Title is required"),          
             url: Yup.string().required("book link is required"),
             about: Yup.string(),
@@ -123,6 +123,7 @@ export default function AddForm() {
                       size="small"
                       fullWidth
                       name="title"
+                      id="title"
                       type="text"
                       label="Title"
                     />
@@ -139,6 +140,7 @@ export default function AddForm() {
                       size="small"
                       fullWidth
                       name="url"
+                      id="url"
                       type="text"
                       label="Url"
                     />
@@ -155,6 +157,7 @@ export default function AddForm() {
                       size="small"
                       fullWidth
                       name="about"
+                      id="about"
                       label="about"
                       rows={3}
                     />

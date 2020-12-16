@@ -65,11 +65,7 @@ export default function Home() {
     <Grid item xs={12} md={6}>   
        <AddForm/>     
       </Grid>
-      <Grid item xs={12} md={3}/>
-
-
-
-    
+      <Grid item xs={12} md={3}/>    
     <Grid item xs={12} md={12}>
       <Bookmark/>
      
