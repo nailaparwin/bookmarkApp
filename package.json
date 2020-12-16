@@ -14,9 +14,19 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@apollo/client": "^3.2.7",
+    "@material-ui/core": "^4.11.0",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "cross-fetch": "^3.0.6",
+    "formik": "^2.2.5",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-material-ui": "^2.1.10",
+    "gatsby-plugin-typescript": "^2.4.17",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "typescript": "^3.9.7",
+    "yup": "^0.30.0"
   },
   "devDependencies": {
     "prettier": "2.1.2"
